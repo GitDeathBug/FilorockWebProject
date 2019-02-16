@@ -1,0 +1,4 @@
+NotEmpty.producto.Tipo= Tipo requerido
+NotEmpty.producto.Diseño= Diseño requerido
+NotEmpty.producto.Material= Material requerido
+NotEmpty.producto.Precio= Precio requerido

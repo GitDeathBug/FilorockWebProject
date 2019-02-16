@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+</head>
+
+<Style>
+body{
+background:#000;
+}
+</Style>
+
+<body>
+	<div class="container py-4">
+	<table class="table table-bordereless">
+		<thead class="thead-inverse">
+			<tr>
+				<th>id</th>
+				<th>Tipo</th>
+				<th>Diseño</th>
+				<th>Material</th>
+				<th>Precio</th>
+				<!-- <th>btn-1</th>
+				<th>btn-2</th>
+				<th>btn-3</th> -->
+			</tr>
+		</thead>
+		
+		<tbody>
+			<tr th:each="producto: ${producto}">
+				<!-- <td><a class="btn btn-primary btn-xs"
+					th:href="@{/ver/} + ${cliente.id}"
+					th:text="${cliente.id}"></a></td>
+					-->
+				<td th:text="${producto.Tipo}"></td>
+				<td th:text="${producto.Diseño}"></td>
+				<td th:text="${producto.Material}"></td>
+				<td th:text="${producto.Precio}"></td>
+				<!-- <td><a class="btn btn-success btn-xs"
+					th:href="@{'/factura/form/' + ${cliente.id}}"
+					th:text="'crear factura'"></a></td>
+					-->
+				<!-- <td><a class="btn btn-primary btn-xs"
+					th:href="@{/form/} + ${cliente.id}"
+					th:text="'editar'"></a></td>
+				<td><a class="btn btn-danger btn-xs"
+						th:href="@{/eliminar/} + ${cliente.id}"
+						th:text="'eliminar'"
+						onclick="return confirm('Estas seguro que quieres eliminar?');"></a></td>
+						-->
+			</tr>
+		</tbody>
+	</table>
+	</div>
+</body>
